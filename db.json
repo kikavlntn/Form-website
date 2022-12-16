@@ -1,5 +1,5 @@
 {
-  "data": [
+  "users": [
     {
       "email": "juan@gmail.com",
       "password": "fljsadhfljkds",
@@ -17,6 +17,12 @@
       "password": "as",
       "DOB": "0011-11-11",
       "id": 3
+    },
+    {
+      "email": "william.d.devial@gmail.com",
+      "password": "ddjfhhdjdjsdhffsdjdsjfs",
+      "DOB": "1111-11-11",
+      "id": 4
     }
   ]
 }
