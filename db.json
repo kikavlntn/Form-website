@@ -5,24 +5,6 @@
       "password": "fljsadhfljkds",
       "DOB": "1111-11-11",
       "id": 1
-    },
-    {
-      "email": "juan2@gmail.com",
-      "password": "dsffdsfsd",
-      "DOB": "1111-11-11",
-      "id": 2
-    },
-    {
-      "email": "juan89@gmail.com",
-      "password": "as",
-      "DOB": "0011-11-11",
-      "id": 3
-    },
-    {
-      "email": "william.d.devial@gmail.com",
-      "password": "ddjfhhdjdjsdhffsdjdsjfs",
-      "DOB": "1111-11-11",
-      "id": 4
     }
   ]
 }

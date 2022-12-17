@@ -37,9 +37,9 @@ password.addEventListener("keydown", () => {
   switch (true) {
     case password.value.length > 20:
       passwordStrong.style.backgroundColor = "green";
-    case password.value.length > 14:
+    case password.value.length > 12:
       passwordMedium.style.backgroundColor = "orange";
-    case password.value.length > 6:
+    case password.value.length > 3:
       passwordWeak.style.backgroundColor = "red";
   }
 });
