@@ -1,1 +1,29 @@
+import axios from "axios";
+
 export {};
+const form = document.getElementById("wrapper") as HTMLFormElement;
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const info = Object.fromEntries(formData.entries());
+  try {
+    await axios
+      .get(`http://0.0.0.0:3000/users?email=${info.email}`)
+      .then(async (response) => {
+        const data = response.data[0];
+
+        if (!data) {
+          window.location.replace("http://localhost:5173/");
+          console.log("hello world");
+        } else if (data.password !== info.password) {
+          alert("Details not correct, please try again or reset password");
+          console.log(data.password, info.password, data.email, info.email);
+        } else {
+          alert("Logged in");
+        }
+      });
+  } catch {
+    console.log("Catch Statment");
+  }
+});
