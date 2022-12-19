@@ -12,6 +12,12 @@
       "DOB": "1111-11-11",
       "Subscribe": "on",
       "id": 2
+    },
+    {
+      "email": "juan@gmail.com",
+      "password": "aaaaaaaaaa",
+      "DOB": "1111-11-11",
+      "id": 3
     }
   ]
 }
