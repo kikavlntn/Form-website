@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <title>Form</title>
-  </head>
-  <body class="bg-slate-200 flex justify-around py-6 px-4">
-    <form id="wrapper" class="flex flex-col p-8 gap-6 bg-slate-50 rounded-xl">
-      <div class="flex justify-between">
-        <div class="flex gap-4 items-center">
-          <img src="../../public/key-solid.svg" class="h-8" alt="" />
-          <h2 class="text-2xl font-bold">Log in</h2>
-        </div>
-        <img
-          class="h-6 self-start"
-          src="../../public/circle-xmark-regular.svg"
-          alt=""
-        />
-      </div>
-      <p>
-        Become a member -- and enjoy exclusive features, deals, offers, invites,
-        and rewards.
-      </p>
-      <hr class="bg-slate-400" />
-      <div class="flex flex-col gap-1">
-        <p>Email <span class="text-red-600">*</span></p>
-        <input
-          class="p-2 rounded-md border"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="example@mail.com"
-          required
-        />
-      </div>
-      <div class="flex flex-col gap-1">
-        <p>Password<span class="text-red-600">*</span></p>
-        <input
-          class="p-2 rounded-md border"
-          type="password"
-          name="password"
-          placeholder="at least 8 characters"
-          required
-          minlength="7"
-          id="password"
-        />
-      </div>
-      <div class="flex items-center gap-3 justify-between">
-        <label class="text-slate-500 text-lg flex gap-2" for="remembering">
-          <input class="rounded-md" type="checkbox" name="remember" checked />
-          Remember me</label
-        >
-        <a href="../about/password.html" class="text-slate-500"
-          >Forgot password?</a
-        >
-      </div>
-      <input
-        type="submit"
-        value="Become a member"
-        class="bg-blue-500 text-white rounded-md py-3 text-xl text-bold"
-        name=""
-        id=""
-      />
-      <hr class="bg-slate-400" />
-      <p class="flex justify-center gap-2 text-slate-500">
-        Don't have an account?
-        <a href="../../index.html" class="text-blue-400 font-bold">Register</a>
-      </p>
-    </form>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style.css" />
+		<title>Form</title>
+	</head>
+	<body class="bg-slate-200 flex justify-around py-6 px-4">
+		<form
+			id="wrapper"
+			class="flex flex-col p-8 gap-6 bg-slate-50 rounded-xl max-w-sm drop-shadow-lg"
+		>
+			<div class="flex justify-between">
+				<div class="flex gap-4 items-center">
+					<img src="../../public/key-solid.svg" class="h-8" alt="" />
+					<h2 class="text-2xl font-bold">Log in</h2>
+				</div>
+				<img
+					class="h-6 self-start"
+					src="../../public/circle-xmark-regular.svg"
+					alt=""
+				/>
+			</div>
+			<p>
+				Become a member -- and enjoy exclusive features, deals, offers, invites,
+				and rewards.
+			</p>
+			<hr class="bg-slate-400" />
+			<div class="flex flex-col gap-1">
+				<p>Email <span class="text-red-600">*</span></p>
+				<input
+					class="p-2 rounded-md border"
+					type="email"
+					id="email"
+					name="email"
+					placeholder="example@mail.com"
+					required
+				/>
+			</div>
+			<div class="flex flex-col gap-1">
+				<p>Password<span class="text-red-600">*</span></p>
+				<input
+					class="p-2 rounded-md border"
+					type="password"
+					name="password"
+					placeholder="at least 8 characters"
+					required
+					minlength="7"
+					id="password"
+				/>
+			</div>
+			<div class="flex items-center gap-3 justify-between">
+				<label class="text-slate-500 text-lg flex gap-2" for="remembering">
+					<input class="rounded-md" type="checkbox" name="remember" checked />
+					Remember me</label
+				>
+				<a href="../about/password.html" class="text-slate-500"
+					>Forgot password?</a
+				>
+			</div>
+			<input
+				type="submit"
+				value="Become a member"
+				class="bg-blue-500 text-white rounded-md py-3 text-xl text-bold"
+				name=""
+				id=""
+			/>
+			<hr class="bg-slate-400" />
+			<p class="flex justify-center gap-2 text-slate-500">
+				Don't have an account?
+				<a href="../../index.html" class="text-blue-400 font-bold">Register</a>
+			</p>
+		</form>
 
-    <script type="module" src="second.ts"></script>
-  </body>
+		<script type="module" src="second.ts"></script>
+	</body>
 </html>

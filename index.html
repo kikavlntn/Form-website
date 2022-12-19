@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-  </head>
-  <body class="bg-slate-200 flex justify-around py-6 px-4">
-    <form id="wrapper" class="flex flex-col p-8 gap-6 bg-slate-50 rounded-xl">
-      <div class="flex justify-between">
-        <div class="flex gap-4 items-center">
-          <img src="public/tick.svg" class="h-8" alt="" />
-          <h2 class="text-2xl font-bold">Sign up</h2>
-        </div>
-        <img
-          class="h-6 self-start"
-          src="public/circle-xmark-regular.svg"
-          alt=""
-        />
-      </div>
-      <p>
-        Become a member -- you will enjoy exclusive deals, offers, invites and
-        rewards.
-      </p>
-      <hr class="bg-slate-400" />
-      <div class="flex flex-col gap-1">
-        <p>Email <span class="text-red-600">*</span></p>
-        <input
-          class="p-2 rounded-md border"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="example@mail.com"
-          required
-        />
-      </div>
-      <div class="flex flex-col gap-1">
-        <p>Create a pass phrase<span class="text-red-600">*</span></p>
-        <input
-          class="p-2 rounded-md border"
-          type="password"
-          name="password"
-          placeholder="at least 8 characters"
-          required
-          minlength="7"
-          id="password"
-        />
-        <div class="flex gap-2 mt-2" id="password-strengh">
-          <div id="p-weak" class="bg-slate-200 h-1 grow rounded-md"></div>
-          <div id="p-medium" class="bg-slate-200 h-1 grow rounded-md"></div>
-          <div id="p-strong" class="bg-slate-200 h-1 grow rounded-md"></div>
-        </div>
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+	</head>
+	<body class="bg-slate-200 flex justify-around py-6 px-4">
+		<form
+			id="wrapper"
+			class="flex flex-col p-8 gap-6 bg-slate-50 rounded-xl max-w-sm drop-shadow-lg"
+		>
+			<div class="flex justify-between">
+				<div class="flex gap-4 items-center">
+					<img src="public/tick.svg" class="h-8" alt="" />
+					<h2 class="text-2xl font-bold">Sign up</h2>
+				</div>
+				<img
+					class="h-6 self-start"
+					src="public/circle-xmark-regular.svg"
+					alt=""
+				/>
+			</div>
+			<p>
+				Become a member -- you will enjoy exclusive deals, offers, invites and
+				rewards.
+			</p>
+			<hr class="bg-slate-400" />
+			<div class="flex flex-col gap-1">
+				<p>Email <span class="text-red-600">*</span></p>
+				<input
+					class="p-2 rounded-md border"
+					type="email"
+					id="email"
+					name="email"
+					placeholder="example@mail.com"
+					required
+				/>
+			</div>
+			<div class="flex flex-col gap-1">
+				<p>Create a pass phrase<span class="text-red-600">*</span></p>
+				<input
+					class="p-2 rounded-md border"
+					type="password"
+					name="password"
+					placeholder="at least 8 characters"
+					required
+					minlength="7"
+					id="password"
+				/>
+				<div class="flex gap-2 mt-2" id="password-strengh">
+					<div id="p-weak" class="bg-slate-200 h-1 grow rounded-md"></div>
+					<div id="p-medium" class="bg-slate-200 h-1 grow rounded-md"></div>
+					<div id="p-strong" class="bg-slate-200 h-1 grow rounded-md"></div>
+				</div>
+			</div>
 
-      <div class="flex flex-col gap-1">
-        <p>Date of birth<span class="text-red-600">*</span></p>
-        <input
-          class="p-2 rounded-md border text-slate-400"
-          type="date"
-          name="DOB"
-          required
-        />
-        <p class="text-slate-400 text-sm">
-          We want to give you a special treat on your birthday
-        </p>
-      </div>
-      <div class="flex items-center gap-2">
-        <label class="text-slate-500" for="subscribe">
-          <input class="rounded-md" name="Subscribe" type="checkbox" checked />
-          Subscribe to newsletter</label
-        >
-      </div>
-      <input
-        type="submit"
-        value="Become a member"
-        class="bg-blue-500 text-white rounded-md py-3 text-xl text-bold"
-        name=""
-        id=""
-      />
-      <hr class="bg-slate-400" />
-      <p class="flex justify-center gap-2 text-slate-500">
-        Already have an account?
-        <a href="src/about/index2.html" class="text-blue-400 font-bold"
-          >Log in</a
-        >
-      </p>
-    </form>
+			<div class="flex flex-col gap-1">
+				<p>Date of birth<span class="text-red-600">*</span></p>
+				<input
+					class="p-2 rounded-md border text-slate-400"
+					type="date"
+					name="DOB"
+					required
+				/>
+				<p class="text-slate-400 text-sm">
+					We want to give you a special treat on your birthday
+				</p>
+			</div>
+			<div class="flex items-center gap-2">
+				<label class="text-slate-500" for="subscribe">
+					<input class="rounded-md" name="Subscribe" type="checkbox" checked />
+					Subscribe to newsletter</label
+				>
+			</div>
+			<input
+				type="submit"
+				value="Become a member"
+				class="bg-blue-500 text-white rounded-md py-3 text-xl text-bold"
+				name=""
+				id=""
+			/>
+			<hr class="bg-slate-400" />
+			<p class="flex justify-center gap-2 text-slate-500">
+				Already have an account?
+				<a href="src/about/index2.html" class="text-blue-400 font-bold"
+					>Log in</a
+				>
+			</p>
+		</form>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
 </html>
