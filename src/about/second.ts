@@ -15,10 +15,8 @@ form.addEventListener("submit", async (event) => {
 
         if (!data) {
           window.location.replace("http://localhost:5173/");
-          console.log("hello world");
         } else if (data.password !== info.password) {
           alert("Details not correct, please try again or reset password");
-          console.log(data.password, info.password, data.email, info.email);
         } else {
           alert("Logged in");
         }
